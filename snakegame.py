@@ -26,7 +26,8 @@ while not game_over:
     time.sleep(0.1) 
     for every_segments in all_the_segments:
         every_segments.forward(10)
-        every_segments.turn_left(90)
+        every_segments.left(90)
+        every_segments.forward(10)
         
 
 
