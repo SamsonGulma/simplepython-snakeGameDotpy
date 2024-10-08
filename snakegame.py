@@ -24,7 +24,7 @@ while not game_over:
     
     for every_segments in all_the_segments:
         every_segments.forward(10)
-        time.sleep(1)
+        time.sleep(0.1)
 
 
 yard.exitonclick()
