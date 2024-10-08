@@ -21,9 +21,9 @@ game_over = False
 
 while not game_over:
     yard.update()
+    time.sleep(0.01)
     for every_segments in all_the_segments:
         every_segments.forward(10)
-        time.sleep(0.1)
 
 
 
