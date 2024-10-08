@@ -10,11 +10,12 @@ all_the_segments = []
 
 segment_starting_position = [(0, 0), (-20, 0), (-40, 0)]
 for single_segment_starts_at in segment_starting_position:
-    newly_segment = Turtle('circle')
+    newly_segment = Turtle('square')
     newly_segment.color('black')
-    all_the_segments.append(newly_segment)
     newly_segment.penup()
     newly_segment.goto(single_segment_starts_at)
+    all_the_segments.append(newly_segment)
+
 
 
 game_over = False
