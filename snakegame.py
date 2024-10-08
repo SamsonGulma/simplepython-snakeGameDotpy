@@ -1,4 +1,5 @@
 from turtle import Screen, Turtle
+import time
 
 yard = Screen()
 yard.setup(width=700, height=700)
@@ -19,8 +20,10 @@ for single_segment_starts_at in segment_starting_position:
 game_over = False
 
 while not game_over:
+    yard.update()
     for every_segments in all_the_segments:
         every_segments.forward(10)
+        time.sleep(0.1)
 
 
 
