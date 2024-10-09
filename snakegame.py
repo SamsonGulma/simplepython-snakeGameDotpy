@@ -24,11 +24,12 @@ game_over = False
 while not game_over:
     yard.update()
     time.sleep(0.1) 
-    for every_segments in all_the_segments:
-        every_segments.forward(10)
-
-
-        ad
-
+    
+    for segment_at_number in range(len(all_the_segments) - 1, 0, -1):
+        x_move = all_the_segments[segment_at_number - 1].xcor()
+        y_move = all_the_segments[segment_at_number - 1].ycor()
+        all_the_segments[segment_at_number].goto(x_move, y_move)
+    all_the_segments[0].forward(20)
+    all_the_segments[0].left(90)
 
 yard.exitonclick()
